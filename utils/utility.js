@@ -124,7 +124,7 @@ function parseXML(xmlInput) {
         };
 
         try {
-            var doc = libxml.parseXmlString(xmlInput, parserOptions);
+            var doc = libxml.parseXmlString(xmlInput, parserOptions); // news stuff
             return resolve(doc);
         } catch (e) {
             return reject(new Error('Xml parsing error'));
